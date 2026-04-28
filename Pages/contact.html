@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GUN | Gunners</title>
-    <link rel="stylesheet" href="Styles/home.css" />
-    <link rel="stylesheet" href="Styles/general.css" />
-    <link rel="stylesheet" href="Styles/loader.css" />
-    <script src="Javascript/loader.js"></script>
+    <title>GUN | Contact</title>
+    <link rel="stylesheet" href="../Styles/general.css" />
+    <link rel="stylesheet" href="../Styles/contact.css" />
+    <link rel="stylesheet" href="../Styles/loader.css" />
+    <script src="../Javascript/loader.js"></script>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,35 +25,35 @@
         />
       </div>
     </div>
+
     <div class="nav">
       <h1 class="gun">G.U.N</h1>
       <h1>Gunners</h1>
       <div class="navright">
-        <a href="./index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="../Pages/about.html">About</a>
         <a href="../Pages/contact.html">Contact</a>
         <a href="../Pages/pricing.html">Pricing</a>
         <a href="../Pages/availability.html">Availability</a>
       </div>
     </div>
-    <div class="video-container">
-      <video autoplay muted loop id="myVideo">
-        <source
-          src="Assets/Videos/GunGunnersBackground2.mov"
-          type="video/mp4"
-        />
-        <!-- Provide WebM for broader compatibility -->
-        <source
-          src="Assets/Videos/GunGunnersBackground2.mov"
-          type="video/webm"
-        />
-      </video>
-      <div class="content">
-        <p>Kill those pesky</p>
-        <h1>GODDAMN. UNDEAD. NONLIVINS.</h1>
-        <p class="subtitle">Too ghoul for school</p>
-        <button>SEE PRICING</button>
-      </div>
-    </div>
+    <main class="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or want to schedule a service? Reach out to us using the
+        form below, and our team will get back to you as soon as possible.
+      </p>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
   </body>
 </html>
