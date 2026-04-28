@@ -46,3 +46,9 @@ body {
 .nav a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 800px) {
+  .about-hero { padding: 28px; text-align: center; }
+  .about-inner p { max-width: 100%; }
+  .about-values { grid-template-columns: 1fr; }
+}
