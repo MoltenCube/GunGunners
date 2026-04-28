@@ -1,0 +1,82 @@
+/* Container setup */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Video styling */
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  width: 100%;
+  height: calc(100% - 60px);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 114, 114);
+  text-align: center;
+  border: 0px solid rgb(0, 0, 0);
+  width: 50vw;
+  padding: 10px;
+  justify-self: center;
+  max-width: 700px;
+  font-family: "Playfair Display", serif;
+  }
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(https://imgs.search.brave.com/w4P5la_eZ8VmgO_qT5ZBjfzlJq0wSNhHhwp7Qs8m_qE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTIv/MjA5Lzk4Ny9zbWFs/bC91c2EtYW1lcmlj/YW4tZmxhZy1zdGFy/cy1hbmQtc3RyaXBl/cy1kZXRhaWwtcGhv/dG8uanBn);
+  background-size: cover;
+  filter: contrast(100%) brightness(10%);
+  z-index: -1;
+    opacity: 90%;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  padding: 20px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-top: -40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(183, 183, 255);
+}
+
+button {
+  background-color: rgb(255, 120, 120);
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 0px 0px 30px 0px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(255, 100, 100);
+  width: 1;
+}
